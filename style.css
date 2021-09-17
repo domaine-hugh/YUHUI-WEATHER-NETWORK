@@ -1,0 +1,478 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+/* Page body settings start */
+body {
+    background-color: rgba( 224,181,137, 0.9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0 auto;
+    width:1200px;
+    color:#282D3C;
+    font-family: 'Concert One', cursive;
+}
+
+.dayTimeWallPaper {
+    background-image: url(./image/daytimewallpaper.jpg);
+}
+
+.nightTimeWallPaper {
+    background-image: url(./image/nighttimewallpaper.jpg);
+}
+
+/* Page body settings end */
+/* Header settings start */
+.headerTopDiv {
+    display:flex;
+    justify-content: space-between;
+    background-color:#EFE1CE;
+}
+
+.headerTopDiv button {
+    align-self: center;
+    margin-left:10px;
+    border-radius: 0;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+    background-color:rgb( 224,181,137);
+}
+
+.subscriptMe {
+    padding:10px;
+    display:flex;
+    justify-content: end;
+}
+
+.subscriptMe a {
+    padding: 0 5px;
+    margin-left: 20px;
+}
+
+#headerTextArea {
+    background-color: rgba( 224,181,137, 0.9);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.thunerTittleTextArea {
+    background-image: url(./image/thunderRainingTitleBackground.gif);
+}
+
+.rainingTittleTextArea {
+    background-image: url(./image/rainingTitleBackground.gif);
+}
+
+.snowingTittleTextArea {
+    background-image: url(./image/snowingTitleBackground.gif);
+}
+
+.foggingTittleTextArea {
+    background-image: url(./image/fogTitleBackground.gif);
+}
+
+.clearSkyTittleTextArea {
+    background-image: url(./image/clearSkyTitleBackground.gif);
+}
+
+.cloudySkyTittleTextArea {
+    background-image: url(./image/cloudyTitleBackground.gif);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1::before {
+    content:'';
+    background-image: url(./image/header-logo.png);
+    display: inline-block;
+    background-size: 100%;
+    width:50px;
+    height:50px;
+    margin-right: 10px;
+}
+/* Header settings end */
+/* Main body settings start */
+main {
+    background-color: rgba( 224,181,137, 0.9);
+    padding: 20px 20px;
+}
+
+/* Location input section settings start */
+.locationInputSection p {
+    font-size: 20px;
+}
+
+.formWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.currentCityName {
+    font-size: 30px;
+}
+
+.locationInputForm {
+    display:flex;
+}
+
+#cityNameInput {
+    align-self: center;
+    height: 30px;
+    width:150px;
+    margin: 0 10px;
+}
+
+#countryNameInput {
+    align-self: center;
+    height: 30px;
+    width:70px;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    margin-right: 10px;
+}
+
+form input[type="submit"],
+.locationInputSection button {
+    align-self: center;
+    border-radius: 0;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+    background-color:#EFE1CE;
+}
+
+.formWrap button a {
+    text-decoration-line: none;
+}
+
+.formWrap button p {
+    margin: 0;
+    color: #282D3C;
+}
+
+.externalLink {
+    display : none;
+    align-self: center;
+    border-radius: 0;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+    background-color:#EFE1CE;
+    text-decoration-line: none;
+    color: #282D3C;
+    padding:0 5px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: aliceblue;
+}
+
+.externalLink p {
+    margin-top: 3px;
+}
+/* Location input section settings end */
+/* Weather display section settings start */
+.weatherDataDisplaySection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.temperatureNumberDisplayDiv {
+    display: flex;
+    margin:0 50px;
+}
+
+.temperatureNumberDisplayDivFlexbox {
+    display: flex;
+    align-items: center;
+    margin-right:50px;
+}
+
+.currentTempertureNumber,
+.temperatureSignSwitch p,
+.currentWeatherDescriptionDisplay {
+    font-size: 30px;
+}
+
+.temperatureSignSwitch {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#onUsedUnitSignButton{
+    background-color:#EFE1CE;
+    color:#282D3C;
+}
+
+.centigradeSign,
+.fahrenheitSign{
+    border-radius: 0;
+    background-color:rgba( 224,181,137, 0.9);
+    color: #D3D3D3;
+    font-family: 'Concert One', cursive;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.weatherInformation {
+    display: flex;
+}
+
+.temperatureSignSwitch {
+    display:flex;
+}
+
+.otherNumberDisplayDiv {
+    margin-right:50px;
+}
+
+.savingWeatherDataButtonFlexbox {
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.savingWeatherDataButton {
+    border-radius: 0;
+    background-color:#EFE1CE;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+/* Weather display section settings end */
+/* Weather data saving section settings start */
+.savingWeatherDataDisplay {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.savingTemperatureDataDisplayDiv {
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.savingTemperatureDataDisplayDiv button {
+    border-radius: 0;
+    font-family: 'Concert One', cursive;
+    background-color:#EFE1CE;
+}
+
+.importantData {
+    background-color: rgba(237, 138, 129, 0.9);
+    border:1px solid #282D3C;
+}
+.importantButtonFlag::before {
+    content:'';
+    background-image: url(./image/importantEvent.png);
+    display: inline-block;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+/* Weather data saving section settings end */
+/* GIFs display section settings start */
+.gifSection {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.gifSection p {
+    align-self: center;
+    font-size: 30px;
+}
+
+.gifDisplayDiv {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.gifBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.imgBox {
+    flex-direction: row;
+}
+
+.imgBox img{
+    width: 300px;
+    margin: 10px 50px;
+    align-self: center;
+}
+
+.gifTittle {
+    width: 300px;
+    margin: 10px 50px;
+}
+
+.gifTittle p {
+    text-align: center;
+}
+/* GIFs display section settings end */
+/* Main body settings end */
+/* Footer settings start */
+footer div {
+    border-top: 3px solid #282D3C;
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right:30px;
+}
+
+footer div a {
+    text-decoration-line: none;
+    color: #282D3C;
+}
+
+footer div a p::before {
+    content:'';
+    background-image: url(./image/junologo.jpg);
+    display: inline-block;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+/* Footer settings end */
+/* Alert box start */
+#newAlertBox {
+    width: 500px;
+    position:fixed;
+    z-index: 999;
+    top: 15%;
+    left:37%;
+    background-color:#EFE1CE;
+    box-shadow: 6px 6px 10px #282D3C;
+    display: inline-block;
+    border: 3px outset rgb( 224,181,137);
+    font-size: 20px;
+}
+
+#newAlertBoxTittle {
+    background-image: linear-gradient( to top right, rgb( 224,181,137), #EFE1CE);
+    height: 40px;
+    padding: 0 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newAlertBoxTittle span,
+#newPromptBoxTittle span,
+#newConfirmBoxTittle span {
+    cursor:pointer;
+}
+
+#newAlerBoxMessege {
+    padding:5px;
+}
+#newAlerBoxCloseButton,
+#newPromptBoxCloseButton,
+#newConfirmBoxButtonDiv button {
+    border-radius: 0;
+    background-color: rgb( 224,181,137);
+    color: #282D3C;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    margin: 10px 20px;
+    float: inline-end;
+}
+/* Alert box end */
+/*Prompt box start */
+#newPromptBox {
+    width: 500px;
+    position:fixed;
+    z-index: 999;
+    top: 40%;
+    left:37%;
+    background-color:#EFE1CE;
+    box-shadow: 6px 6px 10px #282D3C;
+    display: inline-block;
+    border: 3px outset rgb( 224,181,137);
+    font-size: 20px;
+}
+
+#newPromptBoxTittle {
+    background-image: linear-gradient( to top left, rgb( 224,181,137), #EFE1CE);
+    height: 40px;
+    padding: 0 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newPromptBoxMessege {
+    padding:20px 50px;
+}
+#newPromptBoxCloseButton {
+    border-radius: 0;
+    background-color: rgb( 224,181,137);
+    color: #282D3C;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    margin: 10px 10px;
+    float: inline-end;
+}
+/* Prompt box end */
+/*Confirm box start */
+#newConfirmBox {
+    width: 500px;
+    position:fixed;
+    z-index: 999;
+    top: 20%;
+    left:37%;
+    background-color:#EFE1CE;
+    box-shadow: 6px 6px 10px #282D3C;
+    display: inline-block;
+    border: 3px outset rgb( 224,181,137);
+    font-size: 20px;
+}
+
+#newConfirmBoxTittle {
+    background-image: linear-gradient( to top, rgb( 224,181,137), #EFE1CE);
+    height: 40px;
+    padding: 0 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newConfirmBoxMessege {
+    margin: 10px 20px;
+}
+
+#newConfirmBoxButtonDiv {
+    margin:0 50px;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+#newConfirmBoxButtonDiv button  {
+    margin: 10px 10px;
+}
+/* Confirm box end */
