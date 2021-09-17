@@ -4,7 +4,7 @@
 ![DEMO2](https://user-images.githubusercontent.com/84819219/133728829-d14c57d6-ab98-4a67-af43-b68399c910ac.png)  
     
 [YUHUI'S WEATHER NETWORK](https://hughzhoutrt.github.io/YUHUI-WEATHER-NETWORK/)  
-    asdadasdasdadada
+    
     
 ![DEMO3](https://user-images.githubusercontent.com/84819219/133728906-3828c2db-b538-4063-935e-f5385ad66050.png)  
   
