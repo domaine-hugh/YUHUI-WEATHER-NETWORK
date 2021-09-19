@@ -3,8 +3,17 @@
 ![DEMO1](https://user-images.githubusercontent.com/84819219/133728749-6a91114b-101d-4c1c-8113-b502736e9f34.png)  
 ![DEMO2](https://user-images.githubusercontent.com/84819219/133728829-d14c57d6-ab98-4a67-af43-b68399c910ac.png)  
     
-[YUHUI'S WEATHER NETWORK](https://hughzhoutrt.github.io/YUHUI-WEATHER-NETWORK/)  
+Please click this link and jump to my break timer application:[YUHUI'S WEATHER NETWORK](https://hughzhoutrt.github.io/YUHUI-WEATHER-NETWORK/)  
     
+This is my second JavaScript project. The process of building this timer is in my another respository called __JavaScript_projectInJuno__.    
+    
+        
+## About Application    
+    
+**WEATHER DISPLAY**: The application could automatically display the weather in your city, also you can input a city and and its country abbreviation code to check somewhere all over the world! Please check the __"Application Guide"__ and follow its instruction to use this application.     
+![DEMO3](https://user-images.githubusercontent.com/84819219/133728906-3828c2db-b538-4063-935e-f5385ad66050.png)    
+    
+**COUNTRY ABBREVIATION CODE**: The button of area abbreviation code may help you during your inputting. To be more specific, it will display some codes for areas; if the code you are looking for is not in the pop-up window, please click __"More Area Code"__ and the button will change its function then proving an external link for more area abbreviation code checkings.
     
 ![DEMO3](https://user-images.githubusercontent.com/84819219/133728906-3828c2db-b538-4063-935e-f5385ad66050.png)  
   
