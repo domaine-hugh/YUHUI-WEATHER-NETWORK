@@ -14,8 +14,6 @@ This is my second JavaScript project. The process of building this timer is in m
 ![DEMO3](https://user-images.githubusercontent.com/84819219/133728906-3828c2db-b538-4063-935e-f5385ad66050.png)    
     
 **COUNTRY ABBREVIATION CODE**: The button of area abbreviation code may help you during your inputting. To be more specific, it will display some codes for areas; if the code you are looking for is not in the pop-up window, please click __"More Area Code"__ and the button will change its function then proving an external link for more area abbreviation code checkings.
-    
-![DEMO3](https://user-images.githubusercontent.com/84819219/133728906-3828c2db-b538-4063-935e-f5385ad66050.png)  
   
   
 
