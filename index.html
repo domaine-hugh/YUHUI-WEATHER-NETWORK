@@ -8,10 +8,10 @@
     <!-- Add icon before tittle -->
     <link rel="tittle icon" href="./image/page-tittle-logo.png">
     <link href="./style.css" rel="stylesheet">
-    <!-- For fixing HTTPS issue -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <!-- Concert One -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> 
+    <!-- For fixing HTTPS issue -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 </head>
 <body>
     <header>
@@ -35,18 +35,20 @@
                     <div>
                         <p>You can also check for another city: </p>
                     </div>
-                    <label for="cityNameInput" class="sr-only">City Name:</label>
-                    <input type="text" id="cityNameInput" name="cityNameInput" required placeholder="e.g., Toronto">
-                    <label for="countryNameInput" class="sr-only">Country Name by abbreviation:</label>
-                    <input type="text" id="countryNameInput" name="countryNameInput" required placeholder="e.g., CA">
-                    <input type="submit" value="Check The Weather!">
+                    <div>
+                        <label for="cityNameInput" class="sr-only">City Name:</label>
+                        <input type="text" id="cityNameInput" name="cityNameInput" required placeholder="e.g., Toronto">
+                        <label for="countryNameInput" class="sr-only">Country Name by abbreviation:</label>
+                        <input type="text" id="countryNameInput" name="countryNameInput" required placeholder="e.g., CA">
+                        <input type="submit" value="Check The Weather!">
+                    </div>
                 </form>
                 <button class="commonAbbrCode">Area Abbreviation Code</button>
                 <a class="externalLink" href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"><p>Whole List of Country Abbreviation Code</p></a>
             </div>
         </section>
         <sectiom class="weatherDataDisplaySection">
-            <div class="weatherInformation">
+            <div class="weatherIconFlexBox">
                 <div id="weatherIconDiv">
                     <!-- <p>currentWeatherDescription</p>
                     <img src="./image/XXX.png" alt = "XXX logo XXX">  -->
@@ -65,11 +67,11 @@
                         <p>Feels like <span class="currentFeelsLikeTemperatureNumber"></span><span class="currentFeelsLikeTemperatureSign">°C</span></p>
                     </div>
                 </div>
-                <div class="otherNumberDisplayDiv">
-                    <p>Humidity: <span class="humidityDisplay"></span></p>
-                    <p>Pressure: <span class="pressureDisplay"></span></p>
-                    <p>Wind: <span class="windDisplay"></span></p>
-                </div>
+            </div>
+            <div class="otherNumberDisplayDiv">
+                <p>Humidity: <span class="humidityDisplay"></span></p>
+                <p>Pressure: <span class="pressureDisplay"></span></p>
+                <p>Wind: <span class="windDisplay"></span></p>
             </div>
             <div class="savingWeatherDataButtonFlexbox">
                 <button class="savingWeatherDataButton">Save This Data</button>

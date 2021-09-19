@@ -130,14 +130,14 @@ main {
     align-self: center;
     height: 30px;
     width:150px;
-    margin: 0 10px;
+    margin: 17px 10px;
 }
 
 #countryNameInput {
     align-self: center;
     height: 30px;
     width:70px;
-    margin-right: 10px;
+    margin: 17px 10px 17px 0;
 }
 
 form input[type="submit"] {
@@ -153,6 +153,7 @@ form input[type="submit"],
     font-size: 20px;
     font-family: 'Concert One', cursive;
     background-color:#EFE1CE;
+    margin: 17px 0;
 }
 
 .formWrap button a {
@@ -193,15 +194,20 @@ form input[type="submit"],
     font-size: 20px;
 }
 
+.weatherIconFlexBox {
+    display: flex;
+}
+
 .temperatureNumberDisplayDiv {
     display: flex;
-    margin:0 50px;
+    flex-direction: column;
+    margin:0 10px;
 }
 
 .temperatureNumberDisplayDivFlexbox {
     display: flex;
     align-items: center;
-    margin-right:50px;
+    margin-right:20px;
 }
 
 .currentTempertureNumber,
@@ -234,6 +240,7 @@ form input[type="submit"],
 
 .weatherInformation {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .temperatureSignSwitch {
@@ -266,8 +273,8 @@ form input[type="submit"],
 }
 
 .savingTemperatureDataDisplayDiv {
-    margin: 10px 10px;
-    padding: 10px 10px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .savingTemperatureDataDisplayDiv button {
@@ -476,3 +483,275 @@ footer div a p::before {
     margin: 10px 10px;
 }
 /* Confirm box end */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    body {
+        width:100vw;
+    }
+    /* Header start */
+    .headerTopDiv button {
+        margin-left:5px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .subscriptMe a {
+        margin-left: 5px;
+    }
+
+    .subscriptMe a img {
+        height: 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+    
+    h1::before {
+        width:23px;
+        height:23px;
+        margin-right: 5px;
+    }
+    /* Header end */
+    /* Location input section start */
+    .locationInputSection p {
+        font-size: 12px;
+    }
+ 
+    .currentCityName {
+        font-size: 15px;
+    }
+
+    .formWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .locationInputForm {
+        flex-direction: column;
+    }
+
+    #cityNameInput {
+        height: 22px;
+        width:98px;
+        margin: 0 0 2px 0;
+        align-self: flex-start;
+    }
+    
+    #countryNameInput {
+        height: 22px;
+        width:66px;
+        margin-right: 2px;
+        align-self: flex-start;
+        margin: 5px 2px;
+    }
+    
+    form input[type="submit"] {
+        margin: 0;
+    }
+    
+    form input[type="submit"],
+    .locationInputSection button {
+        align-self: flex-end;
+        height: 20px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .locationInputFormSpaceBetweenDiv {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .commonAbbrCode {
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+
+    .externalLink {
+        align-self: flex-end;
+        font-size: 12px;
+        padding: 0 4px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    
+    .externalLink p {
+        margin-top: 2px;
+    }
+    /* Location input section end */
+    /* Weather display section settings start */
+    .weatherDataDisplaySection {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .weatherInformation {
+       justify-content: space-between;
+    }
+
+    .weatherIconFlexBox {
+        flex-direction: column;
+    }
+
+    #weatherIconDiv,
+    #weatherIconDiv img{
+        height:50px;
+        width:50px;
+    }
+
+    .temperatureNumberDisplayDivFlexbox,
+    .otherNumberDisplayDiv {
+        margin-right: 10px;
+    }
+
+    .otherNumberDisplayDiv {
+        align-self: end;
+    }
+    
+    .currentTempertureNumber,
+    .temperatureSignSwitch p,
+    .currentWeatherDescriptionDisplay {
+        font-size: 15px;
+    }
+    
+    .temperatureSignSwitch {
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centigradeSign,
+    .fahrenheitSign{
+        border-radius: 0;
+        background-color:rgba( 224,181,137, 0.9);
+        color: #D3D3D3;
+        font-family: 'Concert One', cursive;
+        font-size: 15px;
+        margin: 0 5px;
+    }
+
+    .savingWeatherDataButton {
+        font-size: 12px;
+        height: 20px;
+    }
+    /* Weather display section settings end */
+    /* Weather data saving section settings start */
+    .savingWeatherDataDisplay {
+        font-size: 12px;
+    }
+
+    .savingTemperatureDataDisplayDiv {
+        margin: 3px;
+        padding: 3px;
+    }
+
+    .importantButtonFlag::before {
+        width: 12px;
+        height: 12px;
+    }
+    /* Weather data saving section settings end */
+    /* GIFs display section settings start */
+    .gifSection {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .gifSection p {
+        font-size: 12px;
+    }
+
+    .gifDisplayDiv {
+        flex-wrap: wrap;
+    }
+
+    .imgBox img{
+        width: 80px;
+        margin: 5px 20px;
+    }
+
+    .gifTittle {
+        width: 80px;
+        margin: 5px 20px;
+    }
+    /* GIFs display section settings end */
+    /* Footer settings start */
+    footer div {
+        border-top: 1px solid #282D3C;
+        margin-right:0;
+    }
+
+    footer div a {
+        font-size: 12px;
+    }
+
+    footer div a p::before {
+        width: 15px;
+        height: 15px;;
+    }
+    /* Footer settings end */
+    /* Alert box start */
+    #newAlertBox {
+        width: 300px;
+        top: 15%;
+        left:10%;
+        font-size: 12px;
+    }
+
+    #newAlertBoxTittle {
+        background-image: linear-gradient( to top right, rgb( 224,181,137), #EFE1CE);
+        height: 20px;
+        padding: 0 10px;
+    }
+
+    #newAlerBoxCloseButton,
+    #newPromptBoxCloseButton,
+    #newConfirmBoxButtonDiv button {
+        font-size: 12px;
+        margin: 5px 10px;
+    }
+    /* Alert box end */
+    /*Prompt box start */
+    #newPromptBox {
+        width: 300px;
+        top: 40%;
+        left:10%;
+        font-size: 12px;
+    }
+
+    #newPromptBoxTittle {
+        height: 20px;
+        padding: 0 10px;
+    }
+
+    #newPromptBoxMessege {
+        padding:10px 20px;
+    }
+    #newPromptBoxCloseButton {
+        font-size: 12px;
+        margin: 5px 5px;
+    }
+    /* Prompt box end */
+    /*Confirm box start */
+    #newConfirmBox {
+        width: 300px;
+        top: 20%;
+        left:10%;
+        font-size: 12px;
+    }
+
+    #newConfirmBoxTittle {
+        height: 20px;
+    }
+
+    #newConfirmBoxButtonDiv {
+        margin:0 20px;
+
+    }
+    /* Confirm box end */
+}

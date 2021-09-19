@@ -61,7 +61,7 @@ const app = {
 };
 
 app.countryAbbreviationCode = `
- There are some abbreviated code of areas:</br>
+ There are some abbreviated codes of areas:</br>
  </br>
  Canada : CA</br>
  United States : US</br>
