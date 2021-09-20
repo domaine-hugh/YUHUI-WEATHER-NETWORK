@@ -554,10 +554,12 @@ footer div a p::before {
     
     form input[type="submit"],
     .locationInputSection button {
-        align-self: flex-end;
         height: 20px;
         font-size: 12px;
         margin: 5px 0;
+        /* For Safari which does not  align-self*/
+        -ms-flex-item-align: end;
+        align-self: flex-end;
     }
 
     .locationInputFormSpaceBetweenDiv {
@@ -714,6 +716,9 @@ footer div a p::before {
     #newConfirmBoxButtonDiv button {
         font-size: 12px;
         margin: 5px 10px;
+        /* For Safari which does not  align-self*/
+        -ms-flex-item-align: end;
+        align-self: flex-end;
     }
     /* Alert box end */
     /*Prompt box start */
