@@ -5,12 +5,13 @@
     
 Please click this link and jump to my break timer application:[YUHUI'S WEATHER NETWORK](https://hughzhoutrt.github.io/YUHUI-WEATHER-NETWORK/)  
     
-This is my second JavaScript project. The process of building this timer is in my another respository called __JavaScript_projectInJuno__.    
+This is my second JavaScript project which is about AJAX. I used three APIs and let them work toghter. The process of building this timer is in my another respository called __JavaScript_projectInJuno__.    
     
         
 ## About Application    
     
-**WEATHER DISPLAY**: The application could automatically display the weather in your city, also you can input a city and and its country abbreviation code to check somewhere all over the world! Please check the __"Application Guide"__ and follow its instruction to use this application.     
+**WEATHER DISPLAY**: The application could automatically display the weather in your city, also you can input a city and and its country abbreviation code to check somewhere all over the world! Please check the __"Application Guide"__ and follow its instruction to use this application.   
+      
 ![DEMO3](https://user-images.githubusercontent.com/84819219/133728906-3828c2db-b538-4063-935e-f5385ad66050.png)    
     
 **CITY INPUT**: You can check the weather in other cities by submitting the city name and its country abbreviation code via the text areas. If you submited an invalid city name or country code, an alert box will appear to warn you and the data of weather will turn back to the previous.
