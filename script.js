@@ -326,7 +326,9 @@ function alert(e) {
         <div id="newAlertBox">
             <div id="newAlertBoxTittle">Application Guide ( ･ω･ )ﾉ<span class="boxCloseButton">x</span></div>
             <div id="newAlerBoxMessege">`+ e + `</div>
-            <button id="newAlerBoxCloseButton" class="boxCloseButton">I Got It!</button>
+            <div id="newAlerBoxCheckBox">
+                <button id="newAlerBoxCloseButton" class="boxCloseButton">I Got It!</button>
+            </div>
         </div>
      `);
         app.alertSituation = 1;
@@ -345,7 +347,9 @@ window.prompt = function prompt(e) {
         <div id="newPromptBox">
             <div id="newPromptBoxTittle">Oops (ﾟoﾟ〃)<span class="boxPromptCloseButton">x</span></div>
             <div id="newPromptBoxMessege">`+ e + `</div>
-            <button id="newPromptBoxCloseButton" class="boxPromptCloseButton">Thanks!</button>
+            <div id="newPromptBoxCheckBox">
+                <button id="newPromptBoxCloseButton" class="boxPromptCloseButton">Thanks!</button>
+            </div>
         </div>
      `);
         app.promptSituation = 1;
