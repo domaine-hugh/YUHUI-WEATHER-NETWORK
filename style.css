@@ -493,7 +493,7 @@ footer div a p::before {
 /* Confirm box end */
 
 /* iPad Pro (12.9-inch) */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     body {
         width:100vw;
     }
@@ -524,9 +524,6 @@ footer div a p::before {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-    body {
-        width:100vw;
-    }
     /* Header start */
     .headerTopDiv button {
         margin-left:20px;
@@ -568,7 +565,7 @@ footer div a p::before {
     
     #countryNameInput {
         height: 25px;
-        margin: 5px 25px;
+        margin: 5px 10px;
     }
 
     form input[type="submit"],
@@ -734,12 +731,15 @@ footer div a p::before {
     /* Confirm box end */
 }
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+
+
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    body {
-        width:100vw;
-        height:100vh;
-    }
     /* Header start */
     .headerTopDiv button {
         margin-left:5px;
