@@ -126,6 +126,10 @@ main {
     display:flex;
 }
 
+.locationInputFormRow {
+    display:flex;
+}
+
 #cityNameInput {
     align-self: center;
     height: 30px;
@@ -136,7 +140,7 @@ main {
 #countryNameInput {
     align-self: center;
     height: 30px;
-    width:70px;
+    width:100px;
     margin: 17px 10px 17px 0;
 }
 
@@ -530,22 +534,29 @@ footer div a p::before {
     }
 
     .locationInputForm {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .locationInputFormRow {
         flex-direction: column;
     }
 
     #cityNameInput {
         height: 22px;
-        width:98px;
+        width:110px;
         margin: 0 0 2px 0;
-        align-self: flex-start;
     }
     
     #countryNameInput {
         height: 22px;
-        width:66px;
+        width:75px;
         margin-right: 2px;
-        align-self: flex-start;
         margin: 5px 2px;
+    }
+
+    .checkWeatherButtonDiv {
+        display:flex;
     }
     
     form input[type="submit"] {
@@ -557,8 +568,6 @@ footer div a p::before {
         height: 20px;
         font-size: 12px;
         margin: 5px 0;
-        /* For Safari which does not  align-self*/
-        -ms-flex-item-align: end;
         align-self: flex-end;
     }
 

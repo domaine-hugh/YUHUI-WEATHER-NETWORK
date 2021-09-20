@@ -32,14 +32,18 @@
             <p>Your current city is: <span class="currentCityName"></span></p>
             <div class="formWrap">
                 <form class="locationInputForm" name="locationInputForm">
-                    <div>
-                        <p>You can also check for another city: </p>
+                    <div class="locationInputFormRow">
+                        <div>
+                            <p>You can also check for another city: </p>
+                        </div>
+                        <div>
+                            <label for="cityNameInput" class="sr-only">City Name:</label>
+                            <input type="text" id="cityNameInput" name="cityNameInput" required placeholder="e.g., Toronto">
+                            <label for="countryNameInput" class="sr-only">Country Name by abbreviation:</label>
+                            <input type="text" id="countryNameInput" name="countryNameInput" required placeholder="e.g., CA">
+                        </div>
                     </div>
-                    <div>
-                        <label for="cityNameInput" class="sr-only">City Name:</label>
-                        <input type="text" id="cityNameInput" name="cityNameInput" required placeholder="e.g., Toronto">
-                        <label for="countryNameInput" class="sr-only">Country Name by abbreviation:</label>
-                        <input type="text" id="countryNameInput" name="countryNameInput" required placeholder="e.g., CA">
+                    <div class="checkWeatherButtonDiv">
                         <input type="submit" value="Check The Weather!">
                     </div>
                 </form>
