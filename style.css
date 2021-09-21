@@ -247,10 +247,6 @@ form input[type="submit"],
     flex-wrap: wrap;
 }
 
-.temperatureSignSwitch {
-    display:flex;
-}
-
 .otherNumberDisplayDiv {
     margin-right:50px;
 }
@@ -497,13 +493,8 @@ footer div a p::before {
     body {
         width:100vw;
     }
-
-    .locationInputForm {
-        display:flex;
-    }
     
     .locationInputFormRow {
-        display:flex;
         flex-direction: column;
     }
 
@@ -589,7 +580,7 @@ footer div a p::before {
     /* Location input section end */
     /* Weather display section settings start */
     .otherNumberDisplayDiv {
-        align-self: end;
+        align-self: flex-end;
     }
     
     .temperatureNumberDisplayDivFlexbox p,
@@ -605,13 +596,10 @@ footer div a p::before {
     
     .temperatureSignSwitch {
         height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .centigradeSign,
-    .fahrenheitSign{
+    .fahrenheitSign {
         font-size: 25px;
         margin: 0 8px;
     }
@@ -634,7 +622,6 @@ footer div a p::before {
     /* GIFs display section settings start */
     .gifSection {
         font-size: 16px;
-        margin-bottom: 20px;
     }
 
     .gifSection p {
@@ -648,7 +635,6 @@ footer div a p::before {
     .imgBox img,
     .gifTittle {
         width: 200px;
-        margin: 5px 20px;
     }
     /* GIFs display section settings end */
     /* Footer settings start */
@@ -677,7 +663,6 @@ footer div a p::before {
     #newAlertBoxTittle {
         background-image: linear-gradient( to top right, rgb( 224,181,137), #EFE1CE);
         height: 25px;
-        padding: 0 20px;
     }
 
     #newAlerBoxCloseButton,
@@ -697,7 +682,6 @@ footer div a p::before {
 
     #newPromptBoxTittle {
         height: 25px;
-        padding: 0 20px;
     }
 
     #newPromptBoxMessege {
@@ -705,7 +689,6 @@ footer div a p::before {
     }
     #newPromptBoxCloseButton {
         font-size: 16px;
-        margin: 10px 10px;
     }
     /* Prompt box end */
     /*Confirm box start */
@@ -722,7 +705,6 @@ footer div a p::before {
 
     #newConfirmBoxButtonDiv {
         margin:0 25px;
-
     }
     /* Confirm box end */
 }
@@ -751,7 +733,6 @@ footer div a p::before {
     h1::before {
         width:25px;
         height:25px;
-        margin-right: 8px;
     }
     /* Header end */
      /* Location input section start */
@@ -764,7 +745,6 @@ footer div a p::before {
     }
 
     .formWrap {
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -786,10 +766,6 @@ footer div a p::before {
         margin-right: 2px;
         margin: 5px 2px;
     }
-
-    .checkWeatherButtonDiv {
-        display:flex;
-    }
     
     form input[type="submit"] {
         margin: 0;
@@ -799,7 +775,6 @@ footer div a p::before {
     .locationInputSection button {
         height: 23px;
         font-size: 14px;
-        margin: 5px 0;
     }
 
     .locationInputFormSpaceBetweenDiv {
@@ -813,20 +788,13 @@ footer div a p::before {
     }
 
     .externalLink {
-        align-self: flex-end;
         font-size: 14px;
-        padding: 0 4px;
         height: 23px;
         margin-top: 10px;
-    }
-    
-    .externalLink p {
-        margin-top: 2px;
     }
     /* Location input section end */
     /* Weather display section settings start */
     .weatherDataDisplaySection {
-        display: flex;
         flex-wrap: wrap;
         margin-top: 15px;
         font-size: 14px;
@@ -850,10 +818,6 @@ footer div a p::before {
     .otherNumberDisplayDiv {
         margin-right: 15px;
     }
-
-    .otherNumberDisplayDiv {
-        align-self: end;
-    }
     
     .currentTempertureNumber,
     .temperatureSignSwitch p,
@@ -863,9 +827,6 @@ footer div a p::before {
     
     .temperatureSignSwitch {
         height: 23px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .centigradeSign,
@@ -905,10 +866,6 @@ footer div a p::before {
         font-size: 14px;
     }
 
-    .gifDisplayDiv {
-        flex-wrap: wrap;
-    }
-
     .imgBox img,
     .gifTittle {
         width: 150px;
@@ -917,7 +874,6 @@ footer div a p::before {
     /* Footer settings start */
     footer div {
         border-top: 1px solid #282D3C;
-        margin-right:0;
     }
 
     footer div a {
@@ -1008,7 +964,6 @@ footer div a p::before {
     h1::before {
         width:23px;
         height:23px;
-        margin-right: 5px;
     }
     /* Header end */
     /* Location input section start */
@@ -1023,35 +978,25 @@ footer div a p::before {
     #cityNameInput {
         height: 21px;
         width:110px;
-        margin: 0 0 2px 0;
     }
     
     #countryNameInput {
         height: 21px;
-        width:75px;
-        margin-right: 2px;
-        margin: 5px 2px;
     }
     
     form input[type="submit"],
     .locationInputSection button {
         height: 20px;
         font-size: 12px;
-        margin: 5px 0;
     }
 
     .externalLink {
-        align-self: flex-end;
         font-size: 12px;
-        padding: 0 4px;
         height: 20px;
-        margin-top: 10px;
     }
     /* Location input section end */
     /* Weather display section settings start */
     .weatherDataDisplaySection {
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 10px;
         font-size: 12px;
     }
@@ -1075,15 +1020,11 @@ footer div a p::before {
     
     .temperatureSignSwitch {
         height: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .centigradeSign,
     .fahrenheitSign{
         font-size: 15px;
-        margin: 0 5px;
     }
 
     .savingWeatherDataButton {
@@ -1166,9 +1107,6 @@ footer div a p::before {
         padding: 0 10px;
     }
 
-    #newPromptBoxMessege {
-        padding:10px 20px;
-    }
     #newPromptBoxCloseButton {
         font-size: 12px;
         margin: 5px 5px;
@@ -1204,15 +1142,10 @@ footer div a p::before {
     }
 
     #cityNameInput {
-        height: 18px;
         width:100px;
-        margin: 0 0 1px 0;
     }
     
     #countryNameInput {
-        height: 18px;
         width:70px;
-        margin-right: 12px;
-        margin: 5px 1px;
     }
 }
