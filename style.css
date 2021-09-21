@@ -728,7 +728,7 @@ footer div a p::before {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 652px) {
+@media (max-width: 767px) {
     /* Header start */
     .headerTopDiv button {
         margin-left:5px;
@@ -1191,4 +1191,28 @@ footer div a p::before {
 
     }
     /* Confirm box end */
+}
+
+/* iPhone 5/SE */
+@media (max-width: 320px) {
+    .locationInputForm {
+        flex-direction: column;
+    }
+
+    .checkWeatherButtonDiv {
+        align-self: flex-end;
+    }
+
+    #cityNameInput {
+        height: 18px;
+        width:100px;
+        margin: 0 0 1px 0;
+    }
+    
+    #countryNameInput {
+        height: 18px;
+        width:70px;
+        margin-right: 12px;
+        margin: 5px 1px;
+    }
 }
