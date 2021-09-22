@@ -418,7 +418,7 @@ footer div a p::before {
     width: 500px;
     position:fixed;
     z-index: 999;
-    top: 40%;
+    top: 30%;
     left:37%;
     background-color:#EFE1CE;
     box-shadow: 6px 6px 10px #282D3C;
