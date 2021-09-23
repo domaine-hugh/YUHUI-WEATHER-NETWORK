@@ -366,7 +366,7 @@ footer div a p::before {
 /* Footer settings end */
 /* Alert box start */
 #newAlertBox {
-    width: 500px;
+    width: 800px;
     position:fixed;
     z-index: 999;
     top: 15%;
