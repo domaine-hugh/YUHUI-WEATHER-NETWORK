@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUHUI'S WEATHER NETWORK</title>
+    <!-- Add icon before tittle -->
+    <link rel="tittle icon" href="./image/page-tittle-logo.png">
+    <link href="./style.css" rel="stylesheet">
+    <link href="/css/styleNew.css" rel="stylesheet">
+    <!-- Concert One -->
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <!-- For fixing HTTPS issue -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+
+<body class="mainWrapper">
+    <header>
+        <div class="headerTopDiv">
+            <button>Application Guide</button>
+            <nav class="subscriptMe">
+                <a href="https://twitter.com/Hugh_Zhou_"><img src="./image/twitter-logo.png" height="40px"></a>
+                <a href="https://github.com/Hughzhoutrt"><img src="./image/github_logo_icon.png" height="40px"></a>
+                <a href="https://www.linkedin.com/in/hugh-yuhui-zhou-47181b170/"><img
+                        src="./image/linkedin_logo_icon.png" height="40px"></a>
+            </nav>
+        </div>
+        <div id="headerTextArea">
+            <h1>YUHUI'S WEATHER NETWORK</h1>
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+
+
+        <header class="header">
+            <div class="flexView flexRow justifySpaceBetween">
+                <div class="flexViewSection navBar">
+                    <button class="btn">Application Guide</button>
+                </div>
+                <div class="flexViewSection social">
+                    <div class="flexView flexRow gapSmall">
+                        <div class="flexViewSection">
+                            <a href="https://twitter.com/Hugh_Zhou_">
+                                <img src="./image/twitter-logo.png" height="40px">
+                            </a>
+                        </div>
+                        <div class="flexViewSection">
+                            <a href="https://github.com/Hughzhoutrt">
+                                <img src="./image/github_logo_icon.png" height="40px">
+                            </a>
+                        </div>
+                        <div class="flexViewSection">
+                            <a href="https://www.linkedin.com/in/hugh-yuhui-zhou-47181b170/">
+                                <img src="./image/linkedin_logo_icon.png" height="40px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="flexView flexCol">
+                <div class="flexViewSection">
+                    <div>Your current city is: Markham, CA</div>
+                </div>
+                <div class="flexViewSection inputSection">
+
+                    <div class="flexView flexRow justifySpaceBetween">
+                        <div class="flexViewSection">
+
+                            <div class="flexView flexRow justifySpaceBetween">
+                                <div class="flexViewSection inputForm">
+
+                                    <div class="flexView flexRow gapSmall">
+                                        <div class="flexViewSection flex alignItemCenter">
+                                            <span>You can also check for another city:</span>
+                                        </div>
+                                        <div class="flexViewSection">
+                                            <input class="input">
+                                        </div>
+                                        <div class="flexViewSection">
+                                            <input class="input">
+                                        </div>
+                                        <div class="flexViewSection">
+                                            <button class="btn">Check The Weather!</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="flexViewSection">
+                            <button class="btn">Area Abbreviation Code</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="locationInputSection">
+            <p>Your current city is: <span class="currentCityName"></span></p>
+            <div class="formWrap">
+                <form class="locationInputForm" name="locationInputForm">
+                    <div class="locationInputFormRow">
+                        <div>
+                            <p>You can also check for another city: </p>
+                        </div>
+                        <div class="cityInputAndCountryCode">
+                            <label for="cityNameInput" class="sr-only">City Name:</label>
+                            <input type="text" id="cityNameInput" name="cityNameInput" required
+                                placeholder="e.g., Toronto">
+                            <label for="countryNameInput" class="sr-only">Country Name by abbreviation:</label>
+                            <input type="text" id="countryNameInput" name="countryNameInput" required
+                                placeholder="e.g., CA">
+                        </div>
+                    </div>
+                    <div class="checkWeatherButtonDiv">
+                        <input type="submit" value="Check The Weather!">
+                    </div>
+                </form>
+                <button class="commonAbbrCode">Area Abbreviation Code</button>
+                <a class="externalLink" href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">
+                    <p>Country Abbreviation Code List</p>
+                </a>
+            </div>
+        </section>
+        <sectiom class="weatherDataDisplaySection">
+            <div class="weatherIconFlexBox">
+                <div id="weatherIconDiv">
+                    <!-- <p>currentWeatherDescription</p>
+                    <img src="./image/XXX.png" alt = "XXX logo XXX">  -->
+                </div>
+                <div class="temperatureNumberDisplayDiv">
+                    <div class="temperatureNumberDisplayDivFlexbox">
+                        <div>
+                            <p class="currentTempertureNumber"></p>
+                        </div>
+                        <div class="temperatureSignSwitch">
+                            <button class="centigradeSign">°C</button>
+                            <p>|</p><button class="fahrenheitSign">°F</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="currentWeatherDescriptionDisplay"></p>
+                        <p>Feels like <span class="currentFeelsLikeTemperatureNumber"></span><span
+                                class="currentFeelsLikeTemperatureSign">°C</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="otherNumberDisplayDiv">
+                <p>Humidity: <span class="humidityDisplay"></span></p>
+                <p>Pressure: <span class="pressureDisplay"></span></p>
+                <p>Wind: <span class="windDisplay"></span></p>
+            </div>
+            <div class="savingWeatherDataButtonFlexbox">
+                <button class="savingWeatherDataButton">Save This Data</button>
+            </div>
+        </sectiom>
+        <section>
+            <div class="savingWeatherDataDisplay">
+                <!-- <div>Weather data display here</div> -->
+            </div>
+            </sectiom>
+            <section class="gifSection">
+                <p>Weather GIFs Show!</p>
+                <div class="gifDisplayDiv">
+
+                </div>
+            </section>
+            <footer>
+                <div>
+                    <a href="https://junocollege.com/">
+                        <p class="footerCreated">Created at JUNO College of Technology</p>
+                    </a>
+                </div>
+            </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

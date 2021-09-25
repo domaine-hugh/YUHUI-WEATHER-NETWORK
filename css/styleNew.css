@@ -1,0 +1,90 @@
+.mainWrapper {
+   line-height: 1;
+   font-family: 'Concert One', cursive;
+}
+
+.alignItemCenter {
+   align-items: center;
+}
+
+.flexView {
+   display: flex;
+}
+.flexView .flex {
+   display: flex;
+}
+.flexView .gapSmall {
+   gap: 1rem;
+}
+.flexView.justifySpaceBetween {
+   justify-content: space-between;
+}
+.flexView.flexCol {
+   flex-direction: column;
+}
+.flexView.flexRow {
+   flex-direction: row;
+}
+.flexView.fit,
+.flexViewSection.fit {
+   display: flex;
+   flex: 1;
+}
+
+.input,
+.btn {
+   outline: none;
+   border: none;
+   padding: .8rem 1.5rem;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+   font-family: inherit;
+}
+
+.btn {
+   display: inline-block;
+   background-color: rgb( 224,181,137);
+}
+.btn:hover {
+   background-color: rgb(184, 136, 87);
+}
+
+
+
+
+.header {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+.inputForm .flexView {
+   display: block;
+}
+.inputForm .flexView > * {
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+}
+
+}
+
+@media (max-width: 600px) {
+
+.header > .flexView {
+   display: block;
+}
+.header .navBar,
+.header .social {
+   display: flex;
+   justify-content: center;
+   padding: 1rem;
+}
+.inputSection .flexView {
+   display: block;
+}
+.inputSection .flexView > * {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   text-align: center;
+}
+}
