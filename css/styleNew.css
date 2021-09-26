@@ -1,13 +1,16 @@
 .mainWrapper {
    line-height: 1;
    font-family: 'Concert One', cursive;
+   width:70vw;
+   margin: 0 auto;
 }
 
 .alignItemCenter {
    align-items: center;
 }
 
-.flexView {
+.flexView,
+.flexViewSection {
    display: flex;
 }
 .flexView .flex {
@@ -31,6 +34,42 @@
    flex: 1;
 }
 
+.flexViewSection.flexCol {
+   flex-direction: column;
+}
+.flexViewSection.flexRow {
+   flex-direction: row;
+}
+
+.flexViewSection.alignSelfCenter {
+   align-self: center;
+}
+
+.flexViewSection.alignSelfFlexEnd {
+   align-self: flex-end;
+}
+
+.flexViewSection.justifyCenter {
+   justify-content: center;
+}
+
+.flexViewSection.flexWrap {
+   flex-wrap: wrap;
+}
+
+.flexViewSection.justifySpaceBetween {
+   justify-content: space-between;
+}
+
+.flexViewSection.gifDisplay img,
+.flexViewSection.gifDisplay p {
+   width: 20vw;
+   text-align: center;
+}
+
+.flexViewSection.alignItemsFlexEnd {
+   align-items: flex-end;
+}
 .input,
 .btn {
    outline: none;
@@ -65,6 +104,9 @@
    padding-top: .5rem;
    padding-bottom: .5rem;
 }
+
+
+
 
 }
 

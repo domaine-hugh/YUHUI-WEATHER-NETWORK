@@ -8,8 +8,8 @@
     <title>YUHUI'S WEATHER NETWORK</title>
     <!-- Add icon before tittle -->
     <link rel="tittle icon" href="./image/page-tittle-logo.png">
-    <link href="./style.css" rel="stylesheet">
-    <link href="/css/styleNew.css" rel="stylesheet">
+    <!-- <link href="./style.css" rel="stylesheet"> -->
+    <link href="./css/styleNew.css" rel="stylesheet">
     <!-- Concert One -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <!-- For fixing HTTPS issue -->
@@ -66,7 +66,7 @@
             </div>
         </header>
 
-        <section>
+        <section class="flex">
             <div class="flexView flexCol">
                 <div class="flexViewSection">
                     <div>Your current city is: Markham, CA</div>
@@ -109,83 +109,64 @@
         </section>
 
 
-        <section class="locationInputSection">
-            <p>Your current city is: <span class="currentCityName"></span></p>
-            <div class="formWrap">
-                <form class="locationInputForm" name="locationInputForm">
-                    <div class="locationInputFormRow">
-                        <div>
-                            <p>You can also check for another city: </p>
-                        </div>
-                        <div class="cityInputAndCountryCode">
-                            <label for="cityNameInput" class="sr-only">City Name:</label>
-                            <input type="text" id="cityNameInput" name="cityNameInput" required
-                                placeholder="e.g., Toronto">
-                            <label for="countryNameInput" class="sr-only">Country Name by abbreviation:</label>
-                            <input type="text" id="countryNameInput" name="countryNameInput" required
-                                placeholder="e.g., CA">
-                        </div>
-                    </div>
-                    <div class="checkWeatherButtonDiv">
-                        <input type="submit" value="Check The Weather!">
-                    </div>
-                </form>
-                <button class="commonAbbrCode">Area Abbreviation Code</button>
-                <a class="externalLink" href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">
-                    <p>Country Abbreviation Code List</p>
-                </a>
-            </div>
-        </section>
-        <sectiom class="weatherDataDisplaySection">
-            <div class="weatherIconFlexBox">
-                <div id="weatherIconDiv">
-                    <!-- <p>currentWeatherDescription</p>
+        <section class="flex">
+            <div class="flexView flexRow justifySpaceBetween">
+                <div id="weatherIconDiv" class="flexViewSection alignSelfCenter">
+                     <!-- <p>currentWeatherDescription</p>
                     <img src="./image/XXX.png" alt = "XXX logo XXX">  -->
                 </div>
-                <div class="temperatureNumberDisplayDiv">
-                    <div class="temperatureNumberDisplayDivFlexbox">
-                        <div>
+                <div class="flexViewSection flexCol alignSelfCenter">
+                    <div class="flexViewSection flexRow alignSelfCenter gapSmall">
+                        <div class="flexViewSection alignSelfCenter">
                             <p class="currentTempertureNumber"></p>
                         </div>
-                        <div class="temperatureSignSwitch">
+                        <div class="flexViewSection flexRow alignSelfCenter">
                             <button class="centigradeSign">°C</button>
-                            <p>|</p><button class="fahrenheitSign">°F</button>
+                            <p>|</p>
+                            <button class="fahrenheitSign">°F</button>
+                        </div>
+                        <div class="flexViewSection flexCol alignSelfCenter">
+                            <p class="currentWeatherDescriptionDisplay"></p>
+                            <p>Feels like <span class="currentFeelsLikeTemperatureNumber"></span><span
+                                class="currentFeelsLikeTemperatureSign">°C</span></p>
                         </div>
                     </div>
-                    <div>
-                        <p class="currentWeatherDescriptionDisplay"></p>
-                        <p>Feels like <span class="currentFeelsLikeTemperatureNumber"></span><span
-                                class="currentFeelsLikeTemperatureSign">°C</span></p>
-                    </div>
+                </div>
+                <div class="flexViewSection flexCol">
+                    <p>Humidity: <span class="humidityDisplay"></span></p>
+                    <p>Pressure: <span class="pressureDisplay"></span></p>
+                    <p>Wind: <span class="windDisplay"></span></p>
+                </div>
+                <div class="flexViewSection flexCol alignSelfFlexEnd">
+                    <button class="btn">Save This Data</button>
                 </div>
             </div>
-            <div class="otherNumberDisplayDiv">
-                <p>Humidity: <span class="humidityDisplay"></span></p>
-                <p>Pressure: <span class="pressureDisplay"></span></p>
-                <p>Wind: <span class="windDisplay"></span></p>
-            </div>
-            <div class="savingWeatherDataButtonFlexbox">
-                <button class="savingWeatherDataButton">Save This Data</button>
-            </div>
-        </sectiom>
-        <section>
-            <div class="savingWeatherDataDisplay">
+        </section>
+
+        <section class="flex">
+            <div class="savingWeatherDataDisplay flexView flexRow justifySpaceBetween">
                 <!-- <div>Weather data display here</div> -->
             </div>
-            </sectiom>
-            <section class="gifSection">
-                <p>Weather GIFs Show!</p>
-                <div class="gifDisplayDiv">
+        </section>
 
-                </div>
-            </section>
-            <footer>
-                <div>
-                    <a href="https://junocollege.com/">
-                        <p class="footerCreated">Created at JUNO College of Technology</p>
-                    </a>
-                </div>
-            </footer>
+        <section class="flex">
+            <div class="flexViewSection justifyCenter">
+                <p>Weather GIFs Show!</p>
+            </div>
+            <div class="gifDisplayDiv flexViewSection flexRow justifySpaceBetween flexWrap gifDisplay">
+
+            </div>
+        </section>
+
+
+    
+        <footer>
+            <div class="flexViewSection flexCol alignItemsFlexEnd">
+                <a href="https://junocollege.com/">
+                    <p class="footerCreated">Created at JUNO College of Technology</p>
+                </a>
+            </div>
+        </footer>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
