@@ -33,6 +33,10 @@
    display: flex;
    flex: 1;
 }
+.flexViewSub.flexRow {
+   display: flex;
+   flex-direction: row;
+}
 
 .flexViewSection.flexCol {
    flex-direction: column;
@@ -105,7 +109,10 @@
    padding-bottom: .5rem;
 }
 
-
+.flexViewSub.flexRow {
+ display:flex;
+ flex-direction: column;
+}
 
 
 }
