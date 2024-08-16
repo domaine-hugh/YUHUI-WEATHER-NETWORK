@@ -1,9 +1,9 @@
-# YUHUI-WEATHER-NETWORK:partly_sunny:  
+# YUHUI-WEATHER-NETWORK :partly_sunny:  
   
 ![DEMO1](https://user-images.githubusercontent.com/84819219/133728749-6a91114b-101d-4c1c-8113-b502736e9f34.png)  
 ![DEMO2](https://user-images.githubusercontent.com/84819219/133728829-d14c57d6-ab98-4a67-af43-b68399c910ac.png)  
     
-Please click this link and jump to my break timer application:[YUHUI'S WEATHER NETWORK](https://hughzhoutrt.github.io/YUHUI-WEATHER-NETWORK/)  
+Please click this link and jump to my break timer application:[YUHUI'S WEATHER NETWORK](https://domaine-hugh.github.io/YUHUI-WEATHER-NETWORK/)  
     
 This is my second JavaScript project which is about AJAX. I used three APIs and let them work toghter. The process of building this timer is in my another respository called __JavaScript_projectInJuno__.    
     
